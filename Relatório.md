@@ -80,9 +80,59 @@ A inclusão da data e hora em que uma mensagem foi vista proporciona transparên
 
 <br>
 
-## Capítulo 2:
+## Capítulo 2: Ferramentas Para Melhoria Da Qualidade De Código E Análise De Código Sobre O Projeto
 
-The findings of the study are presented in this chapter, followed by a discussion of the results. Any trends, patterns, or noteworthy observations are analyzed and interpreted.
+Neste capítulo, foram exploradas várias tecnologias desenvolvidas para melhorar a qualidade do código JavaScript no projeto. A escolha duma boa ferramenta é crucial para garantir a robustez, a manutenibilidade e a eficiência do código-fonte.
+
+### Análise de 5 Tecnolgias
+
+#### JSHint
+O JSHint é uma escolha sólida para a análise de qualidade de código JavaScript, fornecendo uma abordagem configurável e fácil de integrar ao processo de desenvolvimento. Abaixo estão cinco pontos fortes do JSHint:
+
+- **Personalização de Regras:** Permite a configuração flexível de regras, adaptando-se às preferências e padrões específicos do projeto.
+- **Fácil Integração:** Pode ser integrado facilmente em diferentes ambientes de desenvolvimento e fluxos de trabalho.
+- **Identificação de Problemas de Qualidade de Código:** Destaca potenciais problemas de qualidade, como variáveis não utilizadas e erros de sintaxe, contribuindo para a prevenção de bugs.
+- **Suporte à Compatibilidade ECMAScript:** Oferece suporte à especificação ECMAScript, garantindo que o código esteja alinhado com os padrões JavaScript mais recentes.
+- **Feedback Rápido durante o Desenvolvimento:** Fornece feedback imediato no ambiente de desenvolvimento, permitindo correções rápidas e eficientes enquanto o código está sendo escrito.
+
+#### SonarLint
+
+O SonarLint é uma ferramenta valiosa para equipas de desenvolvimento que procuram manter altos padrões de qualidade de código e prevenir a introdução de problemas durante o desenvolvimento.
+
+- **Análise Abrangente:** Faz uma análise abrangente do código-fonte, identificando não apenas erros de sintaxe, mas também vulnerabilidades, bugs e más práticas de codificação.
+- **Integração com IDEs:** Integra-se diretamente aos ambientes de desenvolvimento (IDEs), como IntelliJ IDEA, Eclipse e Visual Studio, proporcionando feedback em tempo real durante o desenvolvimento.
+- **Regras Configuráveis:** Permite a configuração de regras e parâmetros para se adequar aos padrões e requisitos específicos do projeto.
+- **Análise Contínua:** Suporta a análise contínua do código, identificando e alertando sobre problemas à medida que o código é alterado ou adicionado.
+- **Relatórios Detalhados:** Gera relatórios detalhados, oferecendo insights visuais e estatísticas sobre a qualidade do código, facilitando a compreensão e correção de problemas.
+
+#### ESLint
+
+O ESLint é uma ferramenta de análise estática de código para JavaScript, destacando e corrigindo padrões inconsistentes. Seus pontos fortes incluem: 
+- **Identificação de Padrões Inconsistentes:** Destaca e corrige inconsistências no código.
+- **Configuração Flexível:** Permite personalização de regras conforme necessário.
+- **Ampla Comunidade e Ecossistema:** Suporte abrangente e ativo para diferentes frameworks e bibliotecas JavaScript.
+- **Integração Contínua:** Pode ser facilmente incorporado em fluxos de trabalho CI/CD.
+- **Identificação de Problemas em Tempo Real:** Fornece feedback imediato durante o desenvolvimento para prevenir erros.
+
+#### StandardJS
+
+O StandardJS é uma ferramenta de linting para JavaScript que enfatiza uma abordagem de "zero configuração" e aderência estrita a um conjunto consistente de regras. Aqui estão cinco pontos fortes do StandardJS:
+
+- **Zero Configuração Necessária:** Implementa um conjunto predefinido de regras, eliminando a necessidade de configurações extensivas.
+- **Padronização Rígida:** Promove um estilo de codificação consistente e padronizado em projetos JavaScript.
+- **Fácil Adoção:** A simplicidade do StandardJS facilita a adoção rápida em projetos existentes sem configurações complexas.
+- **Comunidade Ativa:** Mantida por uma comunidade ativa que apoia e contribui para o desenvolvimento contínuo.
+- **Integração Suave:** Pode ser integrado facilmente em processos de integração contínua para garantir a qualidade do código ao longo do desenvolvimento.
+
+#### PMD
+
+O PMD é uma ferramenta de análise estática de código que se destaca em várias linguagens de programação, incluindo Java. Abaixo estão cinco pontos fortes do PMD:
+
+- **Multi-Linguagem:** Suporta várias linguagens, incluindo Java, XML, e outros, tornando-o versátil para diferentes ambientes de desenvolvimento.
+- **Diversidade de Regras:** Oferece uma ampla variedade de regras de análise, permitindo a detecção de potenciais problemas de código e padrões de codificação inconsistentes.
+- **Personalização das Regras:** Permite a personalização das regras de acordo com as necessidades específicas do projeto, garantindo flexibilidade na aplicação.
+- **Integração com Ferramentas de Build:** Pode ser facilmente integrado a ferramentas de construção (build tools) como Maven e Ant, tornando a análise parte do processo de construção do projeto.
+- **Relatórios Detalhados:** Gera relatórios detalhados sobre as violações encontradas, facilitando a compreensão e a correção dos problemas identificados no código.
 
 ## Capítulo 3:
 

@@ -60,7 +60,8 @@ Nesta secção, foi ralizada uma análise concisa do projeto através do "revers
 - **Ordenar Serviços por ID:** Organizar serviços com base no ID.
 - **Ordenar Utilizadores por Nome ou Nome de Utilizador:** Organizar utilizadores com base no nome ou nome de utilizador.
 
-
+<br>
+<br>
 
 
 ### Sugestão De Funcionalidades Que Poderiam Ser Desenvolvidas

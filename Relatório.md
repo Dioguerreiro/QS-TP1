@@ -134,6 +134,10 @@ O PMD é uma ferramenta de análise estática de código que se destaca em vári
 - **Integração com Ferramentas de Build:** Pode ser facilmente integrado a ferramentas de construção (build tools) como Maven e Ant, tornando a análise parte do processo de construção do projeto.
 - **Relatórios Detalhados:** Gera relatórios detalhados sobre as violações encontradas, facilitando a compreensão e a correção dos problemas identificados no código.
 
+### A Minha Escolha
+
+Escolhi implementar o ESLint devido à sua flexibilidade e ampla utilização pela comunidade. Esta tecnologia destaca-se por oferecer regras configuráveis que identificam e corrigem padrões inconsistentes no código JavaScript. A robustez, suporte da comunidade e a capacidade de personalização foram fatores decisivos na escolha do ESLint para aprimorar a qualidade do código no projeto.
+
 ## Capítulo 3:
 
 The findings of the study are presented in this chapter, followed by a discussion of the results. Any trends, patterns, or noteworthy observations are analyzed and interpreted.

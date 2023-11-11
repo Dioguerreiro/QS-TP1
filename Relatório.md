@@ -18,46 +18,44 @@ Depois de executar os scripts de criação da base de dados, foi necessário atu
 
 ### Documentação Das Funcionalidades 
 
-Nesta secção, foi ralizada uma análise concisa do projeto através do "reverse engineering". O objetivo era documentar as funcionalidades existentes de forma clara, e por sua vez sugerir e fundamentar sobre requisitos que deveriam ou poderiam estar desenvolvidos.
+Nesta secção, foi ralizada uma análise concisa do projeto através do "reverse engineering". O objetivo era documentar as funcionalidades existentes de forma clara, e por sua vez sugerir e fundamentar sobre requisitos que deveriam ou poderiam estar desenvolvidos. As funcionalidades documentadas são as seguintes:
 
-# Funcionalidades do Sistema
-
-## Autenticação
+#### Autenticação
 - **Login:** Autenticar-se no sistema.
 
-## Gestão de Serviços
+#### Gestão de Serviços
 - **Criar Novo Serviço:** Adicionar um novo serviço ao sistema.
 - **Procurar Serviço por Texto:** Pesquisar serviços com base em texto.
 - **Filtrar Serviço por Categoria:** Filtrar serviços por categoria.
 - **Editar Serviço:** Modificar informações de um serviço existente.
 
-## Gestão de Clientes
+#### Gestão de Clientes
 - **Criar Novo Cliente:** Adicionar um novo cliente ao sistema.
 - **Editar Dados dos Clientes:** Modificar informações dos clientes.
 - **Apagar Cliente:** Remover um cliente do sistema.
 
-## Gestão de Utilizadores
+#### Gestão de Utilizadores
 - **Criar Novos Utilizadores:** Adicionar novos utilizadores (admin ou operador).
 - **Editar Utilizadores:** Modificar informações dos utilizadores.
 - **Procurar Utilizadores por Texto:** Pesquisar utilizadores com base em texto.
 - **Apagar Utilizador:** Remover um utilizador do sistema.
 
-## Mensagens
+#### Mensagens
 - **Enviar e Receber Mensagens:** Comunicação entre utilizadores.
 - **Escolher Utilizador para Conversa:** Selecionar o utilizador com quem deseja conversar.
 - **Filtrar por Paginação:** Organizar mensagens por páginas.
 
-## Personalização nos Serviços
+#### Personalização nos Serviços
 - **Escolher Tipo de Equipamento:** Selecionar o tipo de equipamento em serviços.
 - **Escolher Marca do Equipamento:** Selecionar a marca do equipamento em serviços.
 - **Escolher Tipo de Reparação:** Selecionar o tipo de reparação em serviços.
 - **Escolher Estado de Progresso:** Selecionar o estado de progresso em serviços.
 - **Escolher Tipo de Prioridade:** Selecionar o tipo de prioridade em serviços.
 
-## Personalização nos Utilizadores
+#### Personalização nos Utilizadores
 - **Escolher Tipo de Utilizador:** Definir se um utilizador é administrador ou operador.
 
-## Ordenação
+#### Ordenação
 - **Ordenar Clientes por Nome ou Email:** Organizar clientes com base em nome ou email.
 - **Ordenar Serviços por ID:** Organizar serviços com base no ID.
 - **Ordenar Utilizadores por Nome ou Nome de Utilizador:** Organizar utilizadores com base no nome ou nome de utilizador.

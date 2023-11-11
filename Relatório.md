@@ -61,6 +61,21 @@ Nesta secção, foi ralizada uma análise concisa do projeto através do "revers
 - **Ordenar Utilizadores por Nome ou Nome de Utilizador:** Organizar utilizadores com base no nome ou nome de utilizador.
 
 
+### Sugestão De Funcionalidades Que Poderiam Ser Desenvolvidas
+
+#### Editar Dados do Utilizador Atual e Sua Password
+Esta funcionalidade é essencial para permitir que os utilizadores atualizem as suas informações pessoais de forma autónoma. A possibilidade de editar dados do utilizador, como por exemplo o endereço de e-mail, oferece uma experiência personalizada. Além disso, a capacidade de alterar a palavra-passe aumenta a segurança, permitindo que os utilizadores mantenham as suas contas protegidas e atualizadas.
+
+#### Seleção de Vários Tipos de Reparação ao Criar um Serviço
+
+Introduzir a capacidade de selecionar vários tipos de reparação ao criar um serviço proporciona uma flexibilidade significativa. Diferentes componentes ou aspetos de um equipamento podem requerer reparações distintas. Ao permitir a seleção de vários tipos de reparação para um único serviço, o sistema torna-se mais adaptável a situações em que diferentes intervenções são necessárias.
+
+#### Registo da Data e Hora de Visualização das Mensagens
+
+A inclusão da data e hora em que uma mensagem foi vista proporciona transparência e contexto temporal nas comunicações. Isso é especialmente útil em ambientes colaborativos ou quando é crucial entender quando uma mensagem foi lida. Esta funcionalidade contribui para uma comunicação mais informada e uma experiência de utilizador mais completa.
+
+
+
 ## Capítulo 2:
 
 The findings of the study are presented in this chapter, followed by a discussion of the results. Any trends, patterns, or noteworthy observations are analyzed and interpreted.

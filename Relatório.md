@@ -4,11 +4,12 @@
 
 O Trabalho 1 tinha como objetivo principal realizar uma análise aprofundada do código de um projeto já existente e, posteriormente, implementar melhorias utilizando as técnicas abordadas na disciplina de qualidade de software. O projeto em questão foi originalmente desenvolvido por estudantes anteriores, utilizando as linguagens HTML, CSS e JavaScript. Tratava-se de uma solução web para um sistema de gestão de reparações de componentes eletrónicos.
 
+<br>
+
 ## Capítulo 1: Configuração Do Ambiente E Extração De Requisitos
 
 O primeiro capítulo deste trabalho, concentra-se na configuração do ambiente do aluno para o projeto "Reparação de componentes eletrónicos" e nas etapas preliminares para compreender e aprimorar o sistema existente.
 
-<br>
 
 ### Configuração Do Ambiente E Criação Do Repositório
 
@@ -18,7 +19,6 @@ Para estabelecer a estrutura necessária para o projeto, acedeu-se ao MySQL Work
 
 Depois de executar os scripts de criação da base de dados, foi necessário atualizar as informações de conexão presentes no ficheiro connection-options.json, também localizado na pasta de scripts, de forma a que fosse possível conectar a base de dados com o site.
 
-<br>
 
 ### Documentação Das Funcionalidades 
 
@@ -64,7 +64,6 @@ Nesta secção, foi ralizada uma análise concisa do projeto através do "revers
 - **Ordenar Serviços por ID:** Organizar serviços com base no ID.
 - **Ordenar Utilizadores por Nome ou Nome de Utilizador:** Organizar utilizadores com base no nome ou nome de utilizador.
 
-<br>
 
 ### Sugestão De Funcionalidades Que Poderiam Ser Desenvolvidas
 
@@ -79,7 +78,7 @@ Introduzir a capacidade de selecionar vários tipos de reparação ao criar um s
 
 A inclusão da data e hora em que uma mensagem foi vista proporciona transparência e contexto temporal nas comunicações. Isso é especialmente útil em ambientes colaborativos ou quando é crucial entender quando uma mensagem foi lida. Esta funcionalidade contribui para uma comunicação mais informada e uma experiência de utilizador mais completa.
 
-
+<br>
 
 ## Capítulo 2:
 

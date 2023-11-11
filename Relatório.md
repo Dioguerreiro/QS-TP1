@@ -61,6 +61,8 @@ Nesta secção, foi ralizada uma análise concisa do projeto através do "revers
 - **Ordenar Utilizadores por Nome ou Nome de Utilizador:** Organizar utilizadores com base no nome ou nome de utilizador.
 
 
+
+
 ### Sugestão De Funcionalidades Que Poderiam Ser Desenvolvidas
 
 #### Editar Dados do Utilizador Atual e Sua Password

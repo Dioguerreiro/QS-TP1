@@ -9,7 +9,6 @@ O Trabalho 1 tinha como objetivo principal realizar uma análise aprofundada do 
 O primeiro capítulo deste trabalho, concentra-se na configuração do ambiente do aluno para o projeto "Reparação de componentes eletrónicos" e nas etapas preliminares para compreender e aprimorar o sistema existente.
 
 <br>
-<br>
 
 ### Configuração Do Ambiente E Criação Do Repositório
 
@@ -19,7 +18,6 @@ Para estabelecer a estrutura necessária para o projeto, acedeu-se ao MySQL Work
 
 Depois de executar os scripts de criação da base de dados, foi necessário atualizar as informações de conexão presentes no ficheiro connection-options.json, também localizado na pasta de scripts, de forma a que fosse possível conectar a base de dados com o site.
 
-<br>
 <br>
 
 ### Documentação Das Funcionalidades 
@@ -66,7 +64,6 @@ Nesta secção, foi ralizada uma análise concisa do projeto através do "revers
 - **Ordenar Serviços por ID:** Organizar serviços com base no ID.
 - **Ordenar Utilizadores por Nome ou Nome de Utilizador:** Organizar utilizadores com base no nome ou nome de utilizador.
 
-<br>
 <br>
 
 ### Sugestão De Funcionalidades Que Poderiam Ser Desenvolvidas

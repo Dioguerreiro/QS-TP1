@@ -140,21 +140,42 @@ Escolhi implementar o ESLint devido à sua flexibilidade e ampla utilização pe
 
 ### Análise Do Código - ESLint
 
-Após fazer a instalação da biblioteca através do comando npm init ```@eslint/config``` e posteriormente fazer a sua configuração, foram criados os relatórios ao correr a ferramenta sobre o projeto. Estes resultados estão documentado no ficheiro [esLint_report](esLint_report.pdf), presente no repositório.
+Após fazer a instalação da biblioteca através do comando npm init ```@eslint/config``` e posteriormente fazer a sua configuração, foram criados os relatórios ao correr a ferramenta sobre o projeto. Estes resultados estão documentado no ficheiro [esLint_report](esLint_report.pdf), presente no repositório. 
+Nos pontos abaixo podemos ver a resolução para alguns dos erros que foram reportados pela framework ESLint.
 
-#### Pasta ./scripts/
+#### Unused variable ( variável não utilizada )
 
 Para este tipo de erros deveremos fazer a seguinte análise: 
 - Rever as linhas mencionadas em cada ficheiro e determinar se as variáveis são necessárias ou se podem ser removidas com segurança.
 - Se as variáveis forem deixadas intencionalmente para uso futuro, adicionar comentários para explicar o seu propósito.
 - Certificar-se de que todas as variáveis são utilizadas adequadamente para melhorar a manutenção e legibilidade do código.
 
+#### Undefined variable ( variável não definida )
 
+Verificar se a variável está definida:
+- Antes de usar uma variável, você pode verificar se ela está definida para evitar erros. Em muitas linguagens de programação, você pode fazer isso usando uma declaração condicional, como um if.
+- Em algumas situações, pode ser apropriado usar tratamento de exceções para lidar com variáveis indefinidas.
+
+#### Undefined function ( função não definida )
+
+Defina as Funções Ausentes:
+- Implementar as funções ausentes no código.
+
+Verifique o Uso das Funções:
+- Depois de definir as funções ausentes, certificar-se de que elas sejam chamadas nos lugares corretos do código.
+
+#### Mixed spaces and tabs ( espaços e tabs misturados )
+
+Escolher um Estilo de Indentação:
+- Decidir se utiliza espaços ou tabulações para a indentação. 
+- Certificar-se de que o editor de código está configurado para usar o estilo de indentação escolhido. Procurar por configurações relacionadas a tabulações e espaços nas preferências ou configurações do editor.
 
 
 ## Capítulo 3: Análise E Codificação De Test Cases
 
 Os Test Cases são essenciais para descrever de maneira clara e compreensível como um sistema se comporta em situações específicas. Neste capítulo, exploraram-se várias tecnologias para melhorar a qualidade do código JavaScript com a criação de Test Cases. 
+
+<br>
 
 ### Análise de 3 Tecnolgias
 

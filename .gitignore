@@ -1,0 +1,65 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Visual Studio Code directory
+.vscode/
+
+# IntelliJ
+.idea/
+
+# Sublime Text
+.sublime-project
+.sublime-workspace
+
+# WebStorm
+.idea/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# User-specific files
+npm-debug.log

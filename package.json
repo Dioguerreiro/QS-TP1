@@ -14,5 +14,12 @@
     "websocket": "^1.0.34",
     "ws": "^8.5.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.53.0",
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
 }

@@ -186,7 +186,7 @@ Escolher um Estilo de Indentação:
 - Decidir se utiliza espaços ou tabulações para a indentação.
 - Certificar-se de que o editor de código está configurado para usar o estilo de indentação escolhido. Procurar por configurações relacionadas a tabulações e espaços nas preferências ou configurações do editor.
 
-### 3 ISO's estudadas
+### 3 ISO's Estudadas
 
 #### ISO/IEC 25010
 
@@ -242,3 +242,16 @@ O Jest é uma framework de teste ágil e perfeito para projetos React e Javascri
 Após análise, escolhi o Jest como framework de teste devido à sua configuração simples e desempenho ágil. Para além disso, como já como tinha utilizado a tecnologia em questão, isso ajudou-me a tomar a decisão. É a escolha ideal para otimizar o processo de teste no projeto.
 
 ### Test Cases - Jest
+
+Após instalar e configurar com sucesso o framework de testes Jest, foram criados testes unitários para as funções críticas presentes nos seguintes ficheiros:
+
+#### authentication-handlers.js 
+Este ficheiro contém funções responsáveis pela autenticação de utilizadores, sendo testadas em dois cenários distintos: um para uma autenticação bem-sucedida e outro para lidar com falhas de autenticação.
+
+#### clients-handlers.js
+Aqui, as funções relacionadas com a manipulação de clientes foram testadas em quatro contextos distintos: obtenção bem-sucedida de clientes, edição de clientes com sucesso, exclusão de clientes com sucesso e criação bem-sucedida de novos clientes.
+
+#### users-handlers.js 
+O conjunto de funções relacionadas à gestão de utilizadores foi abordado em três tipos de testes: obtenção bem-sucedida de utilizadores, criação de novos utilizadores com sucesso e edição bem-sucedida de informações de utilizador existente.
+
+No total, foram desenvolvidos e executados 18 testes unitários, todos bem-sucedidos. Esses testes abrangem diferentes cenários para garantir a robustez e confiabilidade das funções críticas do sistema. A execução bem-sucedida de todos os testes valida a implementação correta das funcionalidades, garantindo que o código atenda aos requisitos especificados.

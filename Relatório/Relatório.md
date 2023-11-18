@@ -207,13 +207,16 @@ A escolha da ISO/IEC 25010 é baseada na necessidade de avaliar e aprimorar a qu
 Ao analisar o projeto com base na ISO/IEC 25010, identificamos áreas para melhorias. Essas críticas apontam oportunidades específicas para aprimorar usabilidade, manutenibilidade, desempenho, segurança e eficiência operacional.
 
 #### Usabilidade
+
 A usabilidade do projeto poderia ser melhorada, especialmente no aspeto estético da interface do utilizador. A parte visual carece de uma abordagem mais atrativa e coerente, o que pode afetar a experiência do utilizador. Além disso, a acessibilidade do sistema revela-se bastante frágil, representando um desafio significativo para utilizadores com necessidades específicas. Melhorias nestes aspetos são cruciais para garantir uma experiência de utilizador mais envolvente e inclusiva, alinhando-se aos princípios de usabilidade preconizados pela ISO/IEC 25010.
 
 #### Manutenibilidade
+
 - Observa-se a falta de documentação apropriada no código JavaScript, o que dificulta a futura manutenção. A ausência de comentários e explicações sobre o funcionamento do código pode aumentar a complexidade, tornando as modificações mais suscetíveis a erros.
 - A escolha de utilizar jQuery no projeto dificulta a implementação eficaz de testes automatizados para diversos elementos. A dependência intensiva do jQuery complica a configuração de testes unitários e de integração, tornando mais desafiador garantir a robustez e confiabilidade do código em diferentes cenários.
 
 #### Segurança
+
 Identificam-se vulnerabilidades de segurança, como falta o armazenamento da password do utilizador de forma encriptada. Estas falhas comprometem a integridade e confidencialidade do sistema.
 
 <br>
@@ -247,17 +250,20 @@ Para instalar e configurar o Jest de forma a automatizar os testes realizaram-se
 
 1. Instalação da framework através do código `npm install --save-dev jest`.
 2. Criação do ficheiro de configuração jest.config.js na raiz do projeto com o seguinte código:
+
 ```js
-    module.exports = {
-        testEnvironment: "node",
-        testMatch: ["**__/tests/__**/*.js?(x)", "**/?(*.)+(spec|test).js?(x)"],
-        collectCoverage: true,
-        collectCoverageFrom: ["src/**/*.js"],
-        coverageDirectory: "coverage",
-    };
+module.exports = {
+  testEnvironment: "node",
+  testMatch: ["**__/tests/__**/*.js?(x)", "**/?(*.)+(spec|test).js?(x)"],
+  collectCoverage: true,
+  collectCoverageFrom: ["src/**/*.js"],
+  coverageDirectory: "coverage",
+};
 ```
-3. Criação da pasta "___tests___"
+
+3. Criação da pasta "**_tests_**"
 4. No ficheiro "package.json" adicionou-se o seguinte bloco de código:
+
 ```js
 "scripts": {
     "test": "jest"
@@ -266,14 +272,97 @@ Para instalar e configurar o Jest de forma a automatizar os testes realizaram-se
 
 Após instalar e configurar com sucesso o framework de testes Jest, foram criados testes unitários para as funções críticas presentes nos seguintes ficheiros:
 
-#### authentication-handlers.js 
+#### authentication-handlers.js
+
 Este ficheiro contém funções responsáveis pela autenticação de utilizadores, sendo testadas em dois cenários distintos: um para uma autenticação bem-sucedida e outro para lidar com falhas de autenticação.
 
+#### users-handlers.js
+
+O conjunto de funções relacionadas à gestão de utilizadores foi abordado em três tipos de testes: obtenção bem-sucedida de utilizadores, criação de novos utilizadores com sucesso e edição bem-sucedida de informações de utilizador existente.
+
 #### clients-handlers.js
+
 Aqui, as funções relacionadas com a manipulação de clientes foram testadas em quatro contextos distintos: obtenção bem-sucedida de clientes, edição de clientes com sucesso, exclusão de clientes com sucesso e criação bem-sucedida de novos clientes.
 
-#### users-handlers.js 
-O conjunto de funções relacionadas à gestão de utilizadores foi abordado em três tipos de testes: obtenção bem-sucedida de utilizadores, criação de novos utilizadores com sucesso e edição bem-sucedida de informações de utilizador existente.
+No código abaixo, é possível ver um dos testes realizados, que neste caso seria para a função "createClient".
+
+- A função `beforeEach` é usada para configurar um ambiente limpo antes de cada teste. Neste caso, ela garante que qualquer chamada anterior à função `createConnection` seja limpa.
+
+- O bloco `test` descreve um caso de teste específico, indicando que a função `createClient` deve criar um cliente com sucesso. Dentro deste bloco:
+
+- `mockConnection`: É criado um objeto simulado que representa uma conexão com o banco de dados. Ele possui métodos como `connect` e `query` que são substituídos por funções "falsas" (`jest.fn()`) para simular comportamentos.
+
+- `mysql.createConnection.mockReturnValue(mockConnection)`: Configura o objeto `mockConnection` para ser retornado quando a função `createConnection` de `mysql` é chamada, simulando a criação de uma conexão.
+
+- `mockRequest`: É criado um objeto de requisição simulado contendo dados fictícios de um novo cliente.
+
+- `mockResponse`: É criado um objeto de resposta simulado que possui o método `sendStatus` substituído por uma função simulada (`jest.fn()`).
+
+- `createClient(mockRequest, mockResponse)`: A função `createClient` é chamada com os objetos simulados de requisição e resposta.
+
+- `expect(mockConnection.connect).toHaveBeenCalled()`: Verifica se o método `connect` da conexão foi chamado, indicando que a conexão foi estabelecida.
+
+- `expect(mockConnection.query).toHaveBeenCalledWith(...)`: Verifica se o método `query` foi chamado com os parâmetros esperados, simulando uma consulta ao banco de dados para inserir o novo cliente.
+
+- `expect(mockResponse.sendStatus).toHaveBeenCalledWith(200)`: Verifica se o método `sendStatus` da resposta foi chamado com o código HTTP 200, indicando que a criação do cliente foi bem-sucedida.
+
+```js
+describe("createClient Function", () => {
+  beforeEach(() => {
+    // Clear all instances and calls to constructor and all methods
+    mysql.createConnection.mockClear();
+  });
+
+  // Test case for creating a client successfully
+  test("should create client successfully", async () => {
+    const mockConnection = {
+      connect: jest.fn(),
+      query: jest.fn((query, values, callback) => {
+        // Simulate a successful client creation
+        callback(null);
+      }),
+    };
+
+    // Set the mock connection to be returned when createConnection is called
+    mysql.createConnection.mockReturnValue(mockConnection);
+
+    const mockRequest = {
+      body: {
+        name: "Mock Client",
+        address: "Mock Address",
+        postCode: "Mock Postcode",
+        email: "mockclient@example.com",
+        nif: "123456789",
+      },
+    };
+    const mockResponse = {
+      sendStatus: jest.fn(),
+    };
+
+    // Call the createClient function with the mock objects
+    await createClient(mockRequest, mockResponse);
+
+    // Verify that connect was called
+    expect(mockConnection.connect).toHaveBeenCalled();
+
+    // Verify that the query method was called with the correct parameters
+    expect(mockConnection.query).toHaveBeenCalledWith(
+      expect.any(String),
+      [
+        "Mock Client",
+        "Mock Address",
+        "Mock Postcode",
+        "mockclient@example.com",
+        "123456789",
+      ],
+      expect.any(Function)
+    );
+
+    // Verify the expected response
+    expect(mockResponse.sendStatus).toHaveBeenCalledWith(200);
+  });
+});
+```
 
 No total, foram desenvolvidos e executados 18 testes unitários, todos bem-sucedidos. Esses testes abrangem diferentes cenários para garantir a robustez e confiabilidade das funções críticas do sistema. A execução bem-sucedida de todos os testes valida a implementação correta das funcionalidades, garantindo que o código atenda aos requisitos especificados.
 

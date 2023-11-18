@@ -243,6 +243,27 @@ Após análise, escolhi o Jest como framework de teste devido à sua configuraç
 
 ### Test Cases - Jest
 
+Para instalar e configurar o Jest de forma a automatizar os testes realizaram-se os seguites passos:
+
+1. Instalação da framework através do código `npm install --save-dev jest`.
+2. Criação do ficheiro de configuração jest.config.js na raiz do projeto com o seguinte código:
+```js
+    module.exports = {
+        testEnvironment: "node",
+        testMatch: ["**__/tests/__**/*.js?(x)", "**/?(*.)+(spec|test).js?(x)"],
+        collectCoverage: true,
+        collectCoverageFrom: ["src/**/*.js"],
+        coverageDirectory: "coverage",
+    };
+```
+3. Criação da pasta "__tests__"
+4. No ficheiro "package.json" adicionou-se o seguinte bloco de código:
+```js
+"scripts": {
+    "test": "jest"
+}
+```
+
 Após instalar e configurar com sucesso o framework de testes Jest, foram criados testes unitários para as funções críticas presentes nos seguintes ficheiros:
 
 #### authentication-handlers.js 

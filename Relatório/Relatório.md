@@ -83,6 +83,7 @@ A inclusão da data e hora em que uma mensagem foi vista proporciona transparên
 ## Capítulo 2: Ferramentas Para Melhoria Da Qualidade De Código E Análise De Código Sobre O Projeto
 
 Neste capítulo, foram exploradas várias tecnologias desenvolvidas para melhorar a qualidade do código JavaScript no projeto. A escolha duma boa ferramenta é crucial para garantir a robustez, a manutenibilidade e a eficiência do código-fonte.
+Para além disso, foram também estudadas algumas normas ISO (International Organization for Standardization) aplicáveis na qualidade de software. É aprentada uma análise de cada uma e a escolha duma delas e por fim é dada uma crítica do ponto de vista dessa ISO.
 
 ### Análise de 5 Tecnolgias
 
@@ -169,6 +170,22 @@ Verifique o Uso das Funções:
 Escolher um Estilo de Indentação:
 - Decidir se utiliza espaços ou tabulações para a indentação. 
 - Certificar-se de que o editor de código está configurado para usar o estilo de indentação escolhido. Procurar por configurações relacionadas a tabulações e espaços nas preferências ou configurações do editor.
+
+
+### 3 ISO's estudadas
+
+#### ISO/IEC 25010
+Esta norma aborda características de qualidade de software, incluindo usabilidade, desempenho, segurança e manutenibilidade.
+
+#### ISO/IEC 9126 
+Embora tenha sido substituída pela ISO/IEC 25010, a ISO/IEC 9126 estabeleceu um modelo para avaliação da qualidade do software com foco em características como funcionalidade, confiabilidade e eficiência.
+
+#### ISO 9001
+Embora seja uma norma de gestão de qualidade ampla, a ISO 9001 também é aplicável ao desenvolvimento de software, fornecendo diretrizes para processos de qualidade em uma organização.
+
+### A Minha Escolha
+
+
 
 
 ## Capítulo 3: Análise E Codificação De Test Cases

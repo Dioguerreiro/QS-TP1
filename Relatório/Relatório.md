@@ -1,6 +1,10 @@
 # Relatório
 
-# Índice
+Mestrado em Engenharia de Software
+Disciplina: Qualidade de Software
+
+Nome: Diogo Guerreiro 
+Número: 202301000
 
 # Índice
 

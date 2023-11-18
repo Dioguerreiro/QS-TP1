@@ -1,5 +1,47 @@
 # Relatório
 
+# Índice
+
+# Índice
+
+- [Introdução](#introdução)
+- [Capítulo 1: Configuração Do Ambiente E Extração De Requisitos](#capítulo-1-configuração-do-ambiente-e-extração-de-requisitos)
+  - [Configuração Do Ambiente E Criação Do Repositório](#configuração-do-ambiente-e-criação-do-repositório)
+  - [Documentação Das Funcionalidades](#documentação-das-funcionalidades)
+  - [Sugestão De Funcionalidades Que Poderiam Ser Desenvolvidas](#sugestão-de-funcionalidades-que-poderiam-ser-desenvolvidas)
+- [Capítulo 2: Ferramentas Para Melhoria Da Qualidade De Código E Análise De Código Sobre O Projeto](#capítulo-2-ferramentas-para-melhoria-da-qualidade-de-código-e-análise-de-código-sobre-o-projeto)
+  - [Análise de 5 Tecnologias](#análise-de-5-tecnologias)
+    - [JSHint](#jshint)
+    - [SonarLint](#sonarlint)
+    - [ESLint](#eslint)
+    - [StandardJS](#standardjs)
+    - [PMD](#pmd)
+  - [A Minha Escolha](#a-minha-escolha)
+  - [Análise Do Código - ESLint](#análise-do-código---eslint)
+    - [Unused variable (variável não utilizada)](#unused-variable-variável-não-utilizada)
+    - [Undefined variable (variável não definida)](#undefined-variable-variável-não-definida)
+    - [Undefined function (função não definida)](#undefined-function-função-não-definida)
+    - [Mixed spaces and tabs (espaços e tabs misturados)](#mixed-spaces-and-tabs-espaços-e-tabs-misturados)
+  - [3 ISO's Estudadas](#3-isos-estudadas)
+    - [ISO/IEC 25010](#isoiec-25010)
+    - [ISO/IEC 9126](#isoiec-9126)
+    - [ISO 9001](#iso-9001)
+  - [A Minha Escolha E Crítica Ao Projeto](#a-minha-escolha-e-crítica-ao-projeto)
+    - [Usabilidade](#usabilidade)
+    - [Manutenibilidade](#manutenibilidade)
+    - [Segurança](#segurança)
+- [Capítulo 3: Análise E Codificação De Test Cases](#capítulo-3-análise-e-codificação-de-test-cases)
+  - [Análise de 3 Tecnologias](#análise-de-3-tecnologias)
+    - [Mocha](#mocha)
+    - [Chai](#chai)
+    - [Jest](#jest)
+  - [A Minha Escolha](#a-minha-escolha-1)
+  - [Test Cases - Jest](#test-cases---jest)
+- [Conclusão](#conclusão)
+
+<br>
+<br>
+
 ## Introdução
 
 O Trabalho 1 tinha como objetivo principal realizar uma análise aprofundada do código de um projeto já existente e, posteriormente, implementar melhorias utilizando as técnicas abordadas na disciplina de qualidade de software. O projeto em questão foi originalmente desenvolvido por estudantes anteriores, utilizando as linguagens HTML, CSS e JavaScript. Tratava-se de uma solução web para um sistema de gestão de reparações de componentes eletrónicos.

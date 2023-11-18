@@ -316,6 +316,7 @@ describe("createClient Function", () => {
     // Verify the expected response
     expect(mockResponse.sendStatus).toHaveBeenCalledWith(200);
   });
+});
 
   // Test case for handling an error during client creation
   test("should handle error during client creation", async () => {

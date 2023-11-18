@@ -334,11 +334,11 @@ Aqui, as funções relacionadas com a manipulação de clientes foram testadas e
 
 No código abaixo, é possível ver um dos testes realizados, que neste caso seria para a função "createClient".
 
-- A função `beforeEach` é usada para configurar um ambiente limpo antes de cada teste. Neste caso, ela garante que qualquer chamada anterior à função `createConnection` seja limpa.
+- A função `beforeEach` é usada para configurar um ambiente limpo antes de cada teste. Neste caso, garante que qualquer chamada anterior à função `createConnection` seja limpa.
 
-- O bloco `test` descreve um caso de teste específico, indicando que a função `createClient` deve criar um cliente com sucesso. Dentro deste bloco:
+- O bloco `test` descreve um caso de teste específico, indicando que a função `createClient` deve criar um cliente com sucesso.
 
-- `mockConnection`: É criado um objeto simulado que representa uma conexão com o banco de dados. Ele possui métodos como `connect` e `query` que são substituídos por funções "falsas" (`jest.fn()`) para simular comportamentos.
+- É criado um objeto simulado utilizando o `mockConnection` que representa uma conexão com a base de dados. Possui métodos como `connect` e `query` que são substituídos por funções "falsas" (`jest.fn()`) para simular comportamentos.
 
 - `mysql.createConnection.mockReturnValue(mockConnection)`: Configura o objeto `mockConnection` para ser retornado quando a função `createConnection` de `mysql` é chamada, simulando a criação de uma conexão.
 
@@ -350,7 +350,7 @@ No código abaixo, é possível ver um dos testes realizados, que neste caso ser
 
 - `expect(mockConnection.connect).toHaveBeenCalled()`: Verifica se o método `connect` da conexão foi chamado, indicando que a conexão foi estabelecida.
 
-- `expect(mockConnection.query).toHaveBeenCalledWith(...)`: Verifica se o método `query` foi chamado com os parâmetros esperados, simulando uma consulta ao banco de dados para inserir o novo cliente.
+- `expect(mockConnection.query).toHaveBeenCalledWith(...)`: Verifica se o método `query` foi chamado com os parâmetros esperados, simulando uma consulta à base de dados para inserir o novo cliente.
 
 - `expect(mockResponse.sendStatus).toHaveBeenCalledWith(200)`: Verifica se o método `sendStatus` da resposta foi chamado com o código HTTP 200, indicando que a criação do cliente foi bem-sucedida.
 

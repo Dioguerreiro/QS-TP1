@@ -256,7 +256,7 @@ Para instalar e configurar o Jest de forma a automatizar os testes realizaram-se
         coverageDirectory: "coverage",
     };
 ```
-3. Criação da pasta "__tests__"
+3. Criação da pasta "___tests___"
 4. No ficheiro "package.json" adicionou-se o seguinte bloco de código:
 ```js
 "scripts": {
@@ -276,3 +276,16 @@ Aqui, as funções relacionadas com a manipulação de clientes foram testadas e
 O conjunto de funções relacionadas à gestão de utilizadores foi abordado em três tipos de testes: obtenção bem-sucedida de utilizadores, criação de novos utilizadores com sucesso e edição bem-sucedida de informações de utilizador existente.
 
 No total, foram desenvolvidos e executados 18 testes unitários, todos bem-sucedidos. Esses testes abrangem diferentes cenários para garantir a robustez e confiabilidade das funções críticas do sistema. A execução bem-sucedida de todos os testes valida a implementação correta das funcionalidades, garantindo que o código atenda aos requisitos especificados.
+
+<br>
+<br>
+
+## Conclusão
+
+Neste projeto foram abordadas diversas etapas cruciais no ciclo de desenvolvimento de software. Desde a criação da conta no GitHub e do repositório privado até à extração de requisitos e análise "reverse engineering" para documentar funcionalidades existentes, cada passo contribuiu para uma compreensão abrangente do projeto.
+
+A exploração e escolha fundamentada de ferramentas de qualidade de código, como ESLint e Jest, demonstram um compromisso com a melhoria contínua do código JavaScript. A análise de conformidade com normas ISO, com a escolha fundamentada de uma delas, adiciona uma camada adicional de rigor ao processo.
+
+A automação de testes reflete um esforço para garantir a robustez e confiabilidade do sistema.
+
+No geral, este projeto não só abordou aspectos técnicos do desenvolvimento, mas também promoveu boas práticas, conformidade com normas e a importância da qualidade de código, culminando numa compreensão abrangente e aplicação prática de conceitos cruciais no desenvolvimento de software.
